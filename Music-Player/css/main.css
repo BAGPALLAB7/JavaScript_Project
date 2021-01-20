@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+
+}
+h3{
+    color: rgba(24, 6, 6, 0.562);
+}
+img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right, #33ccff, #ff99cc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    width: 35rem;
+    height: 35rem;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.3),rgba(255,255,255,0.7));
+    border-radius: 50%;
+    backdrop-filter: blur(0.5rem);
+    z-index: 2;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.circle1,.circle2{
+    background: white;
+    width: 20rem;
+    height: 20rem;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.5));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+.circle1{
+    top: 5%;
+    right: 15%;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.8),rgba(255,255,255,0.5));
+}
+.circle2{
+    width: 10rem;
+    height: 10rem;
+    top: 70%;
+    left: 15%;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.8),rgba(255,255,255,0.5));
+}
+.control{
+
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.control .fas{
+    color: rgba(0, 0, 0, 0.315);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.control .fas:hover{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 1.4rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+.anime{
+    animation: discimg 4s linear infinite;
+}
+
+@keyframes discimg{
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width: 768px){
+    
+    .control .fas {
+        font-size: 2rem;
+    }
+    img {
+        width: 11rem;
+        height: 11rem;
+    }
+    .player{
+        width: 34rem;
+        height: 34rem;
+    }
+    .control{
+        width: 14rem;
+    }
+}
+@media(max-width: 650px){
+    .player{
+        width: 29rem;
+        height: 29rem;
+    }
+    img{
+        width: 11rem;
+        height: 11rem;
+    }
+    .control{
+        width: 11rem;
+    }
+    .control .fas {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px){
+    img {
+        width: 9rem;
+        height: 9rem;
+    }
+    .player{
+        width: 23rem;
+        height: 23rem;
+    }
+    .circle1{
+        width: 14rem;
+        height: 14rem;
+        top: 10%;
+        right: 5%;
+    }
+    .control{
+        width: 11rem;
+    }
+    .control .fas {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 370px){
+    .control .fas {
+        font-size: 1.6rem;
+    }
+    img {
+        width: 7rem;
+        height: 7rem;
+    }
+    .player{
+        width: 18rem;
+        height: 18rem;
+    }
+    .circle1{
+        width: 13rem;
+        height: 13rem;
+        top: 13%;
+        right: 3%;
+    }
+    .circle2{
+        width: 8rem;
+        height: 8rem;
+        top: 65%;
+        left: 6%;
+    }
+    .control{
+        width: 9rem;
+    }
+}
+
+@media (max-width: 320px){
+    .player {
+        width: 18rem;
+        height: 18rem;
+    }
+    img {
+        width: 6rem;
+        height: 6rem;
+    }
+    .control {
+        width: 7.5rem;
+    }
+} 
