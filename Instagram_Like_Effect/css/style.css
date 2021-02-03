@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 62.5%;
+}
+i{
+    font-size: 2rem;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.post{
+    width: 30rem;
+    border: solid;
+    border-color: rgb(240, 20, 75);
+    border-radius: 2rem;
+}
+
+.header img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.like-heart{
+    position: absolute;
+    display: grid;
+    align-items: center;
+
+}
+.like-heart i{
+    color: red;
+    font-size: 4rem;
+    animation: heartGrow 0.8s linear;
+}
+i{
+    cursor: pointer;
+}
+
+
+@keyframes heartGrow{
+    0%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(2);
+    }
+    60%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(2);
+        
+    }
+}
+
+.image img{
+    width: 28rem;
+    height: 40rem;
+    box-shadow: 0 1rem 20rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+.header{
+    width: 28rem;
+    margin: .5rem;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.action{
+    margin: 1rem 0 1rem 0;
+    width: 28rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.action .part1{
+    padding-left: 2rem;
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.action .part2{
+    padding-right: 1rem;
+}
+
+.like2{
+    color: red;
+    animation: smallHeartGrow 0.2s linear;
+}
+@keyframes smallHeartGrow{
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.like3{
+    color: red;
+    animation: smallHeartGrow1 0.2s linear;
+}
+@keyframes smallHeartGrow1{
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
